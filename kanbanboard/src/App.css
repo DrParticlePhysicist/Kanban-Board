@@ -1,0 +1,98 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align Display button to the left */
+  padding: 20px;
+}
+
+.display-button {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.display-button button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 200px;
+  padding: 10px;
+}
+
+.display-button:hover .dropdown {
+  display: block;
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.dropdown-item > span {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.nested-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 150px;
+}
+
+.dropdown-item:hover .nested-dropdown {
+  display: block;
+}
+
+.nested-dropdown button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+
+.nested-dropdown button:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+/* 
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+*/
+
+
+
+
+
